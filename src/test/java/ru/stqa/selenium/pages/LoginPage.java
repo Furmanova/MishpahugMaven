@@ -15,7 +15,7 @@ public class LoginPage extends TestBase {
 
   @BeforeMethod
   public void initPageObjects() {
-    // homepage = PageFactory.initElements(driver, HomePageHelper.class);
+    homepage = PageFactory.initElements(driver, HomePageHelper.class);
     driver.get(baseUrl);
   }
 
@@ -47,9 +47,9 @@ public class LoginPage extends TestBase {
     action.moveToElement(submitButton).build().perform();
     submitButton.click();
     /*waitUntilElementIsLoaded(driver, By.xpath("//mat-icon[@class='but mat-icon material-icons']"),30);*/
-   // WebElement icon = driver.findElement(By.xpath("//mat-icon[@class='but mat-icon material-icons']"));
-    //System.out.println("icon: " + icon.getAttribute("mattooltip"));
-    //Assert.assertTrue(icon.getAttribute("mattooltip").equals("Menu"));
+   WebElement icon = driver.findElement(By.xpath("//mat-icon[@class='but mat-icon material-icons']"));
+    System.out.println("icon: " + icon.getAttribute("mattooltip"));
+    Assert.assertTrue(icon.getAttribute("mattooltip").equals("Menu"));
   }
 }
 
