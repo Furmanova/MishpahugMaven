@@ -36,7 +36,7 @@ public class LoginPage extends TestBase {
     WebElement passwordField = driver
             .findElement(By.xpath("//input[@type='password']"));
     passwordField.click();
-    passwordField.clear();
+    //passwordField.clear();
     passwordField.sendKeys("marina");
         /*waitUntilElementIsLoaded(driver,
                 By.xpath("//span[contains(text(),'Log in')]"),20);*/
@@ -46,6 +46,7 @@ public class LoginPage extends TestBase {
     Actions action = new Actions(driver);
     action.moveToElement(submitButton).build().perform();
     submitButton.click();
+
     /*waitUntilElementIsLoaded(driver, By.xpath("//mat-icon[@class='but mat-icon material-icons']"),30);*/
    WebElement icon = driver.findElement(By.xpath("//mat-icon[@class='but mat-icon material-icons']"));
     System.out.println("icon: " + icon.getAttribute("mattooltip"));

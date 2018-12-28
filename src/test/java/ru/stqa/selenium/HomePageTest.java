@@ -34,7 +34,7 @@ public class HomePageTest extends TestBase{
             if (homepage.getLoginButtonName().equals("Login")) counter++;
             if (homepage.getCreateAccountName().equals("Create Account")) counter++;
             if (homepage.getGoToEventsButtonName().equals("Go to Event list")) counter++;
-            Assert.assertEquals(counter,4);
+            Assert.assertEquals(counter,40);
         }
     }
 

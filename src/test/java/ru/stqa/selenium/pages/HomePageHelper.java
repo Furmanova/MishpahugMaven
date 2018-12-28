@@ -1,6 +1,5 @@
 package ru.stqa.selenium.pages;
 
-import com.sun.org.apache.bcel.internal.generic.InstructionComparator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -31,8 +30,8 @@ public class HomePageHelper extends PageBase {
   }
 
   public void waitUntilPageIsLoaded() {
-    /*waitUntilElementIsLoaded(driver,
-            By.xpath("//span[contains(text(),'Go to Event list')]"), 30);*/
+    waitUntilElementIsLoaded(driver,
+            By.xpath("//span[contains(text(),'Go to Event list')]"), 30);
     waitUntilElementIsLoaded(driver,goToEventsButton,40);
   }
   public String getHeaderText(){
