@@ -1,8 +1,5 @@
 package ru.stqa.selenium.pages;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -11,46 +8,34 @@ import ru.stqa.selenium.TestBase;
 
 public class LoginPage extends TestBase {
 
-  private HomePageHelper homepage;
+    private HomePageHelper homepage;
+    private LoginPageHelper loginPageHelper;
+    private AuthEventsPageHelper authEventsPage;
 
-  @BeforeMethod
-  public void initPageObjects() {
-    homepage = PageFactory.initElements(driver, HomePageHelper.class);
-    driver.get(baseUrl);
-  }
+    @BeforeMethod
+    public void initPageObjects() {
 
-  @Test
-  public void loginPositive() {
-    homepage.waitUntilElementIsLoaded(driver,
-            By.xpath("//span[contains(text(),'Go to Event list')]"), 30);
-    WebElement buttonLogin = driver
-            .findElement(By.xpath("//span[contains(text(),'Login')]"));
-    buttonLogin.click();
-    homepage.waitUntilElementIsLoaded(driver,
-            By.xpath("//span[contains(text(),'Cancel')]"), 30);
-    WebElement emailField = driver
-            .findElement(By.xpath("//input[@type = 'email']"));
-    emailField.click();
-    emailField.clear();
-    emailField.sendKeys("marina@123.com");
-    WebElement passwordField = driver
-            .findElement(By.xpath("//input[@type='password']"));
-    passwordField.click();
-    //passwordField.clear();
-    passwordField.sendKeys("marina");
-        /*waitUntilElementIsLoaded(driver,
-                By.xpath("//span[contains(text(),'Log in')]"),20);*/
-    WebElement submitButton = driver.
-            //findElement(By.xpath("//span[contains(text(),'Log in')]"));
-                    findElement(By.xpath("//button[@type='submit']"));
-    Actions action = new Actions(driver);
-    action.moveToElement(submitButton).build().perform();
-    submitButton.click();
+        homepage = PageFactory.initElements(driver,
+                HomePageHelper.class);
+        loginPageHelper = PageFactory.initElements(driver,
+                LoginPageHelper.class);
+        authEventsPage = PageFactory.initElements(driver,
+                AuthEventsPageHelper.class);
+        driver.get(baseUrl);
+        homepage.waitUntilPageIsLoaded()
+               .pressLoginButton();
+        loginPageHelper.waitUntilPageIsLoaded();
+    }
 
-    /*waitUntilElementIsLoaded(driver, By.xpath("//mat-icon[@class='but mat-icon material-icons']"),30);*/
-   WebElement icon = driver.findElement(By.xpath("//mat-icon[@class='but mat-icon material-icons']"));
-    System.out.println("icon: " + icon.getAttribute("mattooltip"));
-    Assert.assertTrue(icon.getAttribute("mattooltip").equals("Menu"));
-  }
+    @Test
+    public void loginPositive() {
+        loginPageHelper.enterEmail("marina@123.com")
+        .enterPassword("marina")
+        .pressSubmitButton();
+        authEventsPage.waitUntilPageIsLoaded();
+        Assert.assertTrue(authEventsPage.isHeaderCorrect("Find event"));
+        Assert.assertTrue(authEventsPage.isDisplayedIconMenu());
+
+    }
 }
 

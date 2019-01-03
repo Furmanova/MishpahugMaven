@@ -12,41 +12,56 @@ import org.openqa.selenium.support.How;
  */
 public class HomePageHelper extends PageBase {
 
-  @FindBy(how = How.TAG_NAME, using = "h1")
-  @CacheLookup
-  WebElement header;
+    @FindBy(how = How.TAG_NAME, using = "h1")
+    @CacheLookup
+    WebElement header;
 
-  @FindBy(xpath = "//span[contains(text(),'Login')]")
-  WebElement loginButton;
+    @FindBy(xpath = "//span[contains(text(),'Login')]")
+    WebElement loginButton;
 
-  @FindBy(xpath = "//span[contains(text(),'Create Account')]")
-  WebElement createAccountButton;
+    @FindBy(xpath = "//span[contains(text(),'Create Account')]")
+    WebElement createAccountButton;
 
-  @FindBy(xpath = "//span[contains(text(),'Go to Event list')]")
-  WebElement goToEventsButton;
+    @FindBy(xpath = "//span[contains(text(),'Go to Event list')]")
+    WebElement goToEventsButton;
 
-  public HomePageHelper(WebDriver webDriver) {
-    super(webDriver);
-  }
+    public HomePageHelper(WebDriver webDriver) {
+        super(webDriver);
+    }
 
-  public void waitUntilPageIsLoaded() {
-    waitUntilElementIsLoaded(driver,
-            By.xpath("//span[contains(text(),'Go to Event list')]"), 30);
-    waitUntilElementIsLoaded(driver,goToEventsButton,40);
-  }
-  public String getHeaderText(){
-    return header.getText();
-  }
+    public HomePageHelper waitUntilPageIsLoaded() {
+        waitUntilElementIsLoaded(driver,
+                By.xpath("//span[contains(text(),'Go to Event list')]"), 30);
+        waitUntilElementIsLoaded(driver, goToEventsButton, 40);
+        return this;
 
-  public String getLoginButtonName() {
-    return loginButton.getText();
-  }
+    }
 
-  public String getCreateAccountName() {
-    return createAccountButton.getText();
-  }
+    public String getHeaderText() {
+        return header.getText();
+    }
 
-  public String getGoToEventsButtonName() {
-    return goToEventsButton.getText();
-  }
+    public String getLoginButtonName() {
+        return loginButton.getText();
+    }
+
+    public String getCreateAccountName() {
+        return createAccountButton.getText();
+    }
+
+    public String getGoToEventsButtonName() {
+        return goToEventsButton.getText();
+    }
+
+    public HomePageHelper pressGoToEventButton() {
+        goToEventsButton.click();
+        return this;
+    }
+
+    public HomePageHelper pressLoginButton() {
+        loginButton.click();
+        return this;
+
+    }
+
 }
