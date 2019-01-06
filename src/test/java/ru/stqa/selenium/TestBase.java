@@ -38,8 +38,8 @@ public class TestBase {
     driver = WebDriverPool.DEFAULT.getDriver(gridHubUrl, capabilities);
   }
 
-  @AfterSuite(alwaysRun = true)
+  /*@AfterSuite(alwaysRun = true)
   public void tearDown() {
     WebDriverPool.DEFAULT.dismissAll();
-  }
+  }*/
 }

@@ -61,7 +61,11 @@ public class HomePageHelper extends PageBase {
     public HomePageHelper pressLoginButton() {
         loginButton.click();
         return this;
+    }
 
+    public HomePageHelper registrationButton() {
+        createAccountButton.click();
+        return this;
     }
 
 }

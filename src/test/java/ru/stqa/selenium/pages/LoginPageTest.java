@@ -6,7 +6,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import ru.stqa.selenium.TestBase;
 
-public class LoginPage extends TestBase {
+public class LoginPageTest extends TestBase {
 
     private HomePageHelper homepage;
     private LoginPageHelper loginPageHelper;
@@ -35,7 +35,7 @@ public class LoginPage extends TestBase {
         authEventsPage.waitUntilPageIsLoaded();
         Assert.assertTrue(authEventsPage.isHeaderCorrect("Find event"));
         Assert.assertTrue(authEventsPage.isDisplayedIconMenu());
-
     }
+
 }
 
