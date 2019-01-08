@@ -25,6 +25,7 @@ public class HomePageHelper extends PageBase {
     @FindBy(xpath = "//span[contains(text(),'Go to Event list')]")
     WebElement goToEventsButton;
 
+
     public HomePageHelper(WebDriver webDriver) {
         super(webDriver);
     }
@@ -59,6 +60,7 @@ public class HomePageHelper extends PageBase {
     }
 
     public HomePageHelper pressLoginButton() {
+
         loginButton.click();
         return this;
     }
@@ -67,5 +69,6 @@ public class HomePageHelper extends PageBase {
         createAccountButton.click();
         return this;
     }
+
 
 }
