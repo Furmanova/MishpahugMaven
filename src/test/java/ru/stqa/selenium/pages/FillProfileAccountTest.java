@@ -22,15 +22,16 @@ public class FillProfileAccountTest extends TestBase {
     }
 
     @Test
-    public void createAccountForm() {
+    public void createAccountForm() throws InterruptedException {
 
         fillProfileAccount.hamburgerIcon()
                 .clickMyProfile()
+
                 .confessionSelect("Irreligious")
-               // .maritalStatus("Married")
-               // .foodPreference()
-               // .gender()
-                //.languages()
+                //.gender("Female")
+                .foodPreference("Any")
+                .maritalStatus("Married")
+                //.languages("Russian")
                 .firstName("Olga")
                 .lastName("test")
                 .phoneNumber("950066841")

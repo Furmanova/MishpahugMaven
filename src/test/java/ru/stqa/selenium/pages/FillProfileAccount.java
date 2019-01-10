@@ -10,9 +10,9 @@ import org.openqa.selenium.support.ui.Select;
 
 
 public class FillProfileAccount extends PageBase {
-    @FindBy(xpath = "//input[@ formcontrolname='firstName']")
+    @FindBy(xpath = "//input[@id='inputFirstName']")
     WebElement firstName;
-    @FindBy(xpath = "//input[@ formcontrolname='lastName']")
+    @FindBy(xpath = "//input[@id='inputLastName']")
     WebElement lastName;
     @FindBy(xpath = "//input[@id='inputPhoneNumber']")
     WebElement phone;
@@ -21,23 +21,18 @@ public class FillProfileAccount extends PageBase {
 
     @FindBy(css = "svg.mat-datepicker-toggle-default-icon.ng-star-inserted")
     WebElement dateOfBirth;
-    @FindBy(xpath = "//mat-select[@placeholder='Marital Status']//div[@class='mat-select-trigger']\")")
+    @FindBy(xpath = "//mat-select[@placeholder='Marital Status']//div[@class='mat-select-trigger']")
     WebElement maritalStatus;
-    /*@FindBy(xpath = "//span[contains(text(),'Married')]")
-    WebElement maritalStatusSelect;*/
-    @FindBy(xpath = "//mat-select[@id='mat-select-12']//div/div")
+    @FindBy(xpath = "//mat-select[@placeholder='Food Preferences']//div[@class='mat-select-trigger']")
     WebElement foodPreference;
-    @FindBy(xpath = "//span[contains(text(),'Kosher')]")
-    WebElement foodPreferenceSelect;
-    @FindBy(xpath = "//span[@class='mat-select-placeholder ng-tns-c18-51 ng-star-inserted']")
+
+    @FindBy(xpath = "//mat-select[@placeholder='Gender']//div[@class='mat-select-trigger']")
     WebElement gender;
-    @FindBy(xpath = "//span[contains(text(),'Male')]")
-    WebElement genderSelect;
-    @FindBy(xpath = "//span[@class='mat-select-placeholder ng-tns-c18-53 ng-star-inserted']")
+
+    @FindBy(xpath = "//mat-select[@placeholder='Languages']//div[@class='mat-select-trigger']")
     WebElement languages;
-    @FindBy(xpath = "//span[contains(text(),'Russian')]")
-    WebElement languagesSelect;
-    @FindBy(xpath = "//textarea[@id='description']")
+
+    @FindBy(css = "#description")
     WebElement writeFewWordsAboutYourself;
     @FindBy(xpath = "//span[contains(text(),'Cancel')]")
     WebElement cancelButton;
@@ -56,7 +51,7 @@ public class FillProfileAccount extends PageBase {
     }
 
     public FillProfileAccount firstName(String value) {
-        waitUntilElementIsLoaded(driver, firstName, 40);
+        // waitUntilElementIsLoaded(driver, firstName, 40);
         enterValueToField(firstName, value);
         return this;
     }
@@ -71,15 +66,15 @@ public class FillProfileAccount extends PageBase {
         return this;
     }
 
-    public FillProfileAccount confessionSelect(String value) {
-        waitUntilElementIsLoaded(driver,confession,40);
+    public FillProfileAccount confessionSelect(String value) throws InterruptedException {
+        waitUntilElementIsLoaded(driver, confession, 40);
+
         Actions action = new Actions(driver);
         action.moveToElement(confession).build().perform();
         confession.click();
         driver.findElement(By.xpath("//span[contains(text(),'" + value + "')]")).click();
-
         return this;
-            }
+    }
 
     public FillProfileAccount dateOfBirth(String value) {
 
@@ -92,6 +87,7 @@ public class FillProfileAccount extends PageBase {
     }
 
     public FillProfileAccount maritalStatus(String value) {
+        waitUntilElementIsLoaded(driver, maritalStatus, 40);
         Actions action = new Actions(driver);
         action.moveToElement(maritalStatus).build().perform();
         enterClick((maritalStatus));
@@ -99,22 +95,28 @@ public class FillProfileAccount extends PageBase {
         return this;
     }
 
-    public FillProfileAccount foodPreference() {
+    public FillProfileAccount foodPreference(String value) {
+        Actions action = new Actions(driver);
+        action.moveToElement(foodPreference).build().perform();
         enterClick(foodPreference);
-        enterClick(foodPreferenceSelect);
+        driver.findElement(By.xpath("//span[contains(text(),'" + value + "')]")).click();
         return this;
     }
 
-    public FillProfileAccount gender() {
+    public FillProfileAccount gender(String value) {
+        Actions action = new Actions(driver);
+        action.moveToElement(gender).build().perform();
         enterClick(gender);
-        enterClick(genderSelect);
+        driver.findElement(By.xpath("//span[contains(text(),'" + value + "')]")).click();
         return this;
     }
 
 
-    public FillProfileAccount languages() {
+    public FillProfileAccount languages(String value) {
+        Actions action = new Actions(driver);
+        action.moveToElement(languages).build().perform();
         enterClick(languages);
-        enterClick(languagesSelect);
+        driver.findElement(By.xpath("//span[contains(text(),'" + value + "')]")).click();
         return this;
     }
 
