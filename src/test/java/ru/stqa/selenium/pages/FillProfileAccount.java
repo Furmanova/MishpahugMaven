@@ -16,13 +16,12 @@ public class FillProfileAccount extends PageBase {
     WebElement lastName;
     @FindBy(xpath = "//input[@id='inputPhoneNumber']")
     WebElement phone;
-    @FindBy(xpath = "//mat-select[@id='mat-select-0']/div/div")
+    @FindBy(xpath = "//mat-select[@placeholder='Confession']//div[@class='mat-select-trigger']")
     WebElement confession;
-    @FindBy(xpath = "(.//*[normalize-space(text()) and normalize-space(.)='Menu'])[1]/following::span[1]")
-    WebElement confessionSelect;
-    @FindBy(xpath = "//input[@id='inputDateOfBirth']")
+
+    @FindBy(css = "svg.mat-datepicker-toggle-default-icon.ng-star-inserted")
     WebElement dateOfBirth;
-    @FindBy(xpath = "\"//mat-select[@placeholder='Marital Status']//div[@class='mat-select-trigger']\")")
+    @FindBy(xpath = "//mat-select[@placeholder='Marital Status']//div[@class='mat-select-trigger']\")")
     WebElement maritalStatus;
     /*@FindBy(xpath = "//span[contains(text(),'Married')]")
     WebElement maritalStatusSelect;*/
@@ -72,23 +71,15 @@ public class FillProfileAccount extends PageBase {
         return this;
     }
 
-    /*public FillProfileAccount confession() {
-        waitUntilElementIsLoaded(driver, confession, 40);
-        enterClick(confession);
-        // waitUntilElementIsLoaded(driver, confessionSelect, 40);
-        // enterClick(confessionSelect);
-        return this;
-    }*/
-
-    public FillProfileAccount confessionSelect() {
-        waitUntilElementIsLoaded(driver, confession, 40);
+    public FillProfileAccount confessionSelect(String value) {
+        waitUntilElementIsLoaded(driver,confession,40);
         Actions action = new Actions(driver);
         action.moveToElement(confession).build().perform();
-        enterClick(confession);
-        enterClick(confessionSelect);
+        confession.click();
+        driver.findElement(By.xpath("//span[contains(text(),'" + value + "')]")).click();
 
         return this;
-    }
+            }
 
     public FillProfileAccount dateOfBirth(String value) {
 

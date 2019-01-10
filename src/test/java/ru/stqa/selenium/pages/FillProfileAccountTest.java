@@ -26,15 +26,15 @@ public class FillProfileAccountTest extends TestBase {
 
         fillProfileAccount.hamburgerIcon()
                 .clickMyProfile()
-                .confessionSelect()
-                .maritalStatus("Married")
-                .foodPreference()
-                .gender()
-                .languages()
+                .confessionSelect("Irreligious")
+               // .maritalStatus("Married")
+               // .foodPreference()
+               // .gender()
+                //.languages()
                 .firstName("Olga")
                 .lastName("test")
                 .phoneNumber("950066841")
-                .dateOfBirth("2019-01-06")
+                //.dateOfBirth("2019-01-06")
                 .writeFewWordsAboutYourself("test")
                 .cancelButton();
     }
