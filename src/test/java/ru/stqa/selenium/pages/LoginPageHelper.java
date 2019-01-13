@@ -48,7 +48,7 @@ public class LoginPageHelper extends PageBase {
     }
 
     public LoginPageHelper pressSubmitButton() {
-        waitUntilElementIsLoaded(driver, submitButton, 30);
+        waitUntilElementIsLoaded(driver, submitButton, 50);
         Actions action = new Actions(driver);
         action.moveToElement(submitButton).build().perform();
         submitButton.click();

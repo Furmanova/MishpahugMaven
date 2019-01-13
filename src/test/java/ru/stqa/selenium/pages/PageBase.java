@@ -53,8 +53,11 @@ public abstract class PageBase {
         element.clear();
         element.sendKeys(value);
     }
+
     public void enterClick(WebElement element) {
         element.click();
+        element.clear();
+
     }
 
 

@@ -1,9 +1,12 @@
-package ru.stqa.selenium.pages;
+package ru.stqa.selenium;
 
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import ru.stqa.selenium.TestBase;
+import ru.stqa.selenium.pages.AuthEventsPageHelper;
+import ru.stqa.selenium.pages.CreateAccountHelper;
+import ru.stqa.selenium.pages.HomePageHelper;
 
 public class CreateAccountPageTest extends TestBase {
     private HomePageHelper homepage;

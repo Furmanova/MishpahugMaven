@@ -6,6 +6,7 @@ import java.net.URL;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.Capabilities;
 
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
@@ -38,8 +39,9 @@ public class TestBase {
     driver = WebDriverPool.DEFAULT.getDriver(gridHubUrl, capabilities);
   }
 
-  /*@AfterSuite(alwaysRun = true)
-  public void tearDown() {
+  @AfterSuite(alwaysRun = true)
+  public void tearDown() throws InterruptedException {
+    Thread.sleep(10000);
     WebDriverPool.DEFAULT.dismissAll();
-  }*/
+  }
 }

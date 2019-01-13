@@ -41,6 +41,7 @@ public class CreateAccountHelper extends PageBase {
 
     }
     public CreateAccountHelper registrationButton(){
+        waitUntilElementIsLoaded(driver,registrationButton,40);
         registrationButton.click();
         return this;
     }

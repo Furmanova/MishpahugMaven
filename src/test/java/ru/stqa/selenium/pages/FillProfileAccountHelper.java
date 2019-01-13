@@ -6,10 +6,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.Select;
 
 
-public class FillProfileAccount extends PageBase {
+public class FillProfileAccountHelper extends PageBase {
     @FindBy(xpath = "//input[@id='inputFirstName']")
     WebElement firstName;
     @FindBy(xpath = "//input[@id='inputLastName']")
@@ -19,19 +18,16 @@ public class FillProfileAccount extends PageBase {
     @FindBy(xpath = "//mat-select[@placeholder='Confession']//div[@class='mat-select-trigger']")
     WebElement confession;
 
-    @FindBy(css = "svg.mat-datepicker-toggle-default-icon.ng-star-inserted")
+    @FindBy(xpath = "//mat-datepicker-toggle[@class='mat-datepicker-toggle']//button[@type='button']")
     WebElement dateOfBirth;
     @FindBy(xpath = "//mat-select[@placeholder='Marital Status']//div[@class='mat-select-trigger']")
     WebElement maritalStatus;
-    @FindBy(xpath = "//mat-select[@placeholder='Food Preferences']//div[@class='mat-select-trigger']")
+    @FindBy(xpath = "//mat-select[@id='mat-select-2']//div[@class='mat-select-value']")
     WebElement foodPreference;
-
     @FindBy(xpath = "//mat-select[@placeholder='Gender']//div[@class='mat-select-trigger']")
     WebElement gender;
-
     @FindBy(xpath = "//mat-select[@placeholder='Languages']//div[@class='mat-select-trigger']")
     WebElement languages;
-
     @FindBy(css = "#description")
     WebElement writeFewWordsAboutYourself;
     @FindBy(xpath = "//span[contains(text(),'Cancel')]")
@@ -41,34 +37,28 @@ public class FillProfileAccount extends PageBase {
     @FindBy(xpath = "//span[contains(text(),'Profile')]")
     WebElement myProfile;
 
-    public FillProfileAccount(WebDriver driver) {
+    public FillProfileAccountHelper(WebDriver driver) {
         super(driver);
     }
 
-    public FillProfileAccount clickMyProfile() {
-        myProfile.click();
-        return this;
-    }
-
-    public FillProfileAccount firstName(String value) {
-        // waitUntilElementIsLoaded(driver, firstName, 40);
+    public FillProfileAccountHelper firstName(String value) {
+        waitUntilElementIsLoaded(driver, firstName, 40);
         enterValueToField(firstName, value);
         return this;
     }
 
-    public FillProfileAccount lastName(String value) {
+    public FillProfileAccountHelper lastName(String value) {
         enterValueToField(lastName, value);
         return this;
     }
 
-    public FillProfileAccount phoneNumber(String value) {
+    public FillProfileAccountHelper phoneNumber(String value) {
         enterValueToField(phone, value);
         return this;
     }
 
-    public FillProfileAccount confessionSelect(String value) throws InterruptedException {
+    public FillProfileAccountHelper confessionSelect(String value) throws InterruptedException {
         waitUntilElementIsLoaded(driver, confession, 40);
-
         Actions action = new Actions(driver);
         action.moveToElement(confession).build().perform();
         confession.click();
@@ -76,56 +66,56 @@ public class FillProfileAccount extends PageBase {
         return this;
     }
 
-    public FillProfileAccount dateOfBirth(String value) {
-
+    public FillProfileAccountHelper dateOfBirth(int value) {
+        waitUntilElementIsLoaded(driver, dateOfBirth, 40);
         Actions action = new Actions(driver);
-        action.moveToElement(dateOfBirth).build().perform();
-        enterClick(dateOfBirth);
-        driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='JAN'])[1]/following::div[9]")).click();
-
-        return this;
+        action.moveToElement(dateOfBirth).click().build().perform();
+       // enterClick(dateOfBirth);
+       driver.findElement(By.xpath("//div[contains(text(),'" + value + "')]")).click();
+       return this;
     }
 
-    public FillProfileAccount maritalStatus(String value) {
+    public FillProfileAccountHelper maritalStatus(String value) {
         waitUntilElementIsLoaded(driver, maritalStatus, 40);
         Actions action = new Actions(driver);
-        action.moveToElement(maritalStatus).build().perform();
-        enterClick((maritalStatus));
+        action.moveToElement(maritalStatus).click().build().perform();
+        // enterClick((maritalStatus));
         driver.findElement(By.xpath("//span[contains(text(),'" + value + "')]")).click();
         return this;
     }
 
-    public FillProfileAccount foodPreference(String value) {
+    public FillProfileAccountHelper foodPreference(String value) {
+        waitUntilElementIsLoaded(driver, foodPreference, 40);
         Actions action = new Actions(driver);
-        action.moveToElement(foodPreference).build().perform();
-        enterClick(foodPreference);
+        action.moveToElement(foodPreference).click().build().perform();
+        // enterClick(foodPreference);
         driver.findElement(By.xpath("//span[contains(text(),'" + value + "')]")).click();
         return this;
     }
 
-    public FillProfileAccount gender(String value) {
+    public FillProfileAccountHelper gender(String value) {
         Actions action = new Actions(driver);
-        action.moveToElement(gender).build().perform();
-        enterClick(gender);
+        action.moveToElement(gender).click().build().perform();
+        // enterClick(gender);
         driver.findElement(By.xpath("//span[contains(text(),'" + value + "')]")).click();
         return this;
     }
 
 
-    public FillProfileAccount languages(String value) {
+    public FillProfileAccountHelper languages(String value) {
         Actions action = new Actions(driver);
-        action.moveToElement(languages).build().perform();
-        enterClick(languages);
+        action.moveToElement(languages).click().build().perform();
+        //  enterClick(languages);
         driver.findElement(By.xpath("//span[contains(text(),'" + value + "')]")).click();
         return this;
     }
 
-    public FillProfileAccount writeFewWordsAboutYourself(String value) {
+    public FillProfileAccountHelper writeFewWordsAboutYourself(String value) {
         enterValueToField(writeFewWordsAboutYourself, value);
         return this;
     }
 
-    public FillProfileAccount cancelButton() {
+    public FillProfileAccountHelper cancelButton() {
         waitUntilElementIsLoaded(driver, cancelButton, 30);
         return this;
     }
@@ -133,9 +123,9 @@ public class FillProfileAccount extends PageBase {
     public void waitUntilPageIsLoaded() {
     }
 
-    public FillProfileAccount hamburgerIcon() {
+    public FillProfileAccountHelper hamburgerIcon() {
         waitUntilElementIsLoaded(driver, iconMenu, 30);
-        iconMenu.click();
+        // iconMenu.click();
         return this;
     }
 }

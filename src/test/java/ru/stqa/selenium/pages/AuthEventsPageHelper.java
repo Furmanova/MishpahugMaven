@@ -15,6 +15,7 @@ public class AuthEventsPageHelper extends PageBase {
     @FindBy(xpath = "//h1[@class='gorisontal-center']")
     WebElement headerPage;
 
+
     public AuthEventsPageHelper(WebDriver driver) {
         super(driver);
     }
@@ -24,11 +25,16 @@ public class AuthEventsPageHelper extends PageBase {
 
     }
 
-  public boolean isHeaderCorrect(String value) {
-       return headerPage.getText().equals(value);
+    public boolean isHeaderCorrect(String value) {
+        return headerPage.getText().equals(value);
     }
 
     public boolean isDisplayedIconMenu() {
         return iconMenu.getAttribute("mattooltip").equals("Menu");
+    }
+
+    public void hamburgerIcon() {
+        waitUntilElementIsLoaded(driver, iconMenu, 30);
+        iconMenu.click();
     }
 }

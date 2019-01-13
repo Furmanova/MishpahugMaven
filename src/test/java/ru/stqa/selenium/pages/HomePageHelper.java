@@ -60,12 +60,13 @@ public class HomePageHelper extends PageBase {
     }
 
     public HomePageHelper pressLoginButton() {
-
+        waitUntilElementIsLoaded(driver, loginButton, 40);
         loginButton.click();
         return this;
     }
 
     public HomePageHelper registrationButton() {
+        waitUntilElementIsLoaded(driver, createAccountButton, 40);
         createAccountButton.click();
         return this;
     }
