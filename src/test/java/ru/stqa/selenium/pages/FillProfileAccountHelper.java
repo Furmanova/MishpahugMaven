@@ -103,11 +103,14 @@ public class FillProfileAccountHelper extends PageBase {
 
 
     public FillProfileAccountHelper languages(String value) {
+       waitUntilElementIsLoaded(driver,languages,40);
         Actions action = new Actions(driver);
         action.moveToElement(languages).click().build().perform();
-        //  enterClick(languages);
+        //enterClick(languages);
+        //action.doubleClick().build().perform();
         driver.findElement(By.xpath("//span[contains(text(),'" + value + "')]")).click();
-        return this;
+
+                return this;
     }
 
     public FillProfileAccountHelper writeFewWordsAboutYourself(String value) {
