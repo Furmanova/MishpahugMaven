@@ -26,12 +26,12 @@ public class FillProfileAccountTest extends TestBase {
 
     @Test
     public void createAccountForm() throws InterruptedException {
-        fillProfileAccount//.confessionSelect("Irreligious")
-               /* .gender("Female")
+        fillProfileAccount.confessionSelect("Irreligious")
+               .gender("Female")
                 .maritalStatus("Married")
-                .foodPreference("Kosher")
-                .languages("Russian")*/
-                .dateOfBirth(4, "FEB","2018")
+                //.foodPreference("Kosher")
+                .languages("Russian")
+                .dateOfBirth(4, "FEB","1995")
                 .phoneNumber("950066841")
                 .lastName("test")
                 .firstName("Olga")

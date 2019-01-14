@@ -72,6 +72,8 @@ public class FillProfileAccountHelper extends PageBase {
         action.moveToElement(dateOfBirth).click().build().perform();
        //enterClick(dateOfBirth);
         driver.findElement(By.xpath("//button[@class='mat-calendar-period-button mat-button']//span[@class='mat-button-wrapper']")).click();
+       WebElement iconButton = driver.findElement(By.xpath("//button[@class='mat-calendar-previous-button mat-icon-button']"));
+       action.doubleClick(iconButton).perform();
         driver.findElement(By.xpath("//div[contains(text(),'"+ year + "')]")).click();
         driver.findElement(By.xpath("//div[contains(text(),'" + month + "')]")).click();
         driver.findElement(By.xpath("//div[contains(text(),'" + day + "')]")).click();
@@ -110,10 +112,11 @@ public class FillProfileAccountHelper extends PageBase {
     public FillProfileAccountHelper languages(String value) {
        waitUntilElementIsLoaded(driver,languages,40);
         Actions action = new Actions(driver);
-        action.moveToElement(languages).build().perform();
-        enterClick(languages);
+        action.moveToElement(languages).click().build().perform();
+       // enterClick(languages);
         driver.findElement(By.xpath("//span[contains(text(),'" + value + "')]")).click();
-                return this;
+
+        return this;
     }
 
     public FillProfileAccountHelper writeFewWordsAboutYourself(String value) {
