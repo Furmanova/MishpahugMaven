@@ -32,7 +32,7 @@ public class FillProfileAccountTest extends TestBase {
                 .maritalStatus("Married")
                 .foodPreference("Kosher")
                 .languages("Russian")
-                .dateOfBirth(4, "FEB","1995")
+                .dateOfBirth(4, "FEB",2019)
                 .phoneNumber("950066841")
                 .lastName("test")
                 .firstName("Olga")

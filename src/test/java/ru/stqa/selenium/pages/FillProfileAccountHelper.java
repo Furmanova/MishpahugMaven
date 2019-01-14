@@ -69,19 +69,22 @@ public class FillProfileAccountHelper extends PageBase {
         return this;
     }
 
-    public FillProfileAccountHelper dateOfBirth(int day, String month, String year) {
+    public FillProfileAccountHelper dateOfBirth(int day, String month, int year) {
         waitUntilElementIsLoaded(driver, dateOfBirth, 40);
         Actions action = new Actions(driver);
         action.moveToElement(dateOfBirth).click().build().perform();
-       //enterClick(dateOfBirth);
+        //enterClick(dateOfBirth);
+
         driver.findElement(By.xpath("//button[@class='mat-calendar-period-button mat-button']//span[@class='mat-button-wrapper']")).click();
-       WebElement iconButton = driver.findElement(By.xpath("//button[@class='mat-calendar-previous-button mat-icon-button']"));
-       action.doubleClick(iconButton).perform();
-        driver.findElement(By.xpath("//div[contains(text(),'"+ year + "')]")).click();
+        if (year < 2016) {
+            driver.findElement(By.xpath("//button[@class='mat-calendar-previous-button mat-icon-button']")).click();
+                }
+
+        driver.findElement(By.xpath("//div[contains(text(),'" + year + "')]")).click();
         driver.findElement(By.xpath("//div[contains(text(),'" + month + "')]")).click();
         driver.findElement(By.xpath("//div[contains(text(),'" + day + "')]")).click();
 
-       return this;
+        return this;
     }
 
 
@@ -105,19 +108,18 @@ public class FillProfileAccountHelper extends PageBase {
     }
 
     public FillProfileAccountHelper gender(String value) {
-        waitUntilElementIsLoaded(driver,gender,40);
+        waitUntilElementIsLoaded(driver, gender, 40);
         Actions action = new Actions(driver);
         action.moveToElement(gender).click().build().perform();
-       // enterClick(gender);
+        // enterClick(gender);
         driver.findElement(By.xpath("//span[contains(text(),'" + value + "')]")).click();
         return this;
     }
 
     public FillProfileAccountHelper languages(String value) {
-       waitUntilElementIsLoaded(driver,languages,40);
+        waitUntilElementIsLoaded(driver, languages, 40);
         Actions action = new Actions(driver);
         action.moveToElement(languages).click().build().perform();
-       // enterClick(languages);
         driver.findElement(By.xpath("//span[contains(text(),'" + value + "')]")).click();
         action.sendKeys(Keys.ESCAPE).build().perform();
         return this;

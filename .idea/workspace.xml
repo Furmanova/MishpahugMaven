@@ -17,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="FillProfileAccountHelper.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FillProfileAccountHelper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/FillProfileAccountHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="67" column="8" selection-start-line="67" selection-start-column="8" selection-end-line="67" selection-end-column="55" />
+            <state relative-caret-position="189">
+              <caret line="79" column="116" selection-start-line="79" selection-start-column="116" selection-end-line="79" selection-end-column="116" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -29,11 +29,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FillProfileAccountTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="FillProfileAccountTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/selenium/FillProfileAccountTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="41" />
+            <state relative-caret-position="224">
+              <caret line="34" column="42" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -89,8 +89,8 @@
         <option value="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/TestBase.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/PageBase.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/CreateAccountHelper.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/FillProfileAccountTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/FillProfileAccountHelper.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/FillProfileAccountTest.java" />
       </list>
     </option>
   </component>
@@ -504,38 +504,45 @@
       <option name="project" value="LOCAL" />
       <updated>1547464329817</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="fillProfileAccount and FillProfileAccountHelper">
+      <created>1547470875933</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1547470875933</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FillProfileAccountTest_createAccountForm - 2019.01.14 at 13h 46m 24s.xml">
+    <history-entry file="FillProfileAccountTest_createAccountForm - 2019.01.14 at 16h 24m 19s.xml">
       <configuration name="FillProfileAccountTest.createAccountForm" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FillProfileAccountTest_createAccountForm - 2019.01.14 at 13h 56m 48s.xml">
+    <history-entry file="FillProfileAccountTest_createAccountForm - 2019.01.14 at 16h 25m 52s.xml">
       <configuration name="FillProfileAccountTest.createAccountForm" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FillProfileAccountTest_createAccountForm - 2019.01.14 at 13h 57m 11s.xml">
+    <history-entry file="FillProfileAccountTest_createAccountForm - 2019.01.14 at 16h 27m 44s.xml">
       <configuration name="FillProfileAccountTest.createAccountForm" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FillProfileAccountTest_createAccountForm - 2019.01.14 at 14h 07m 26s.xml">
+    <history-entry file="FillProfileAccountTest_createAccountForm - 2019.01.14 at 16h 29m 18s.xml">
       <configuration name="FillProfileAccountTest.createAccountForm" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FillProfileAccountTest_createAccountForm - 2019.01.14 at 14h 08m 15s.xml">
+    <history-entry file="FillProfileAccountTest_createAccountForm - 2019.01.14 at 16h 29m 46s.xml">
       <configuration name="FillProfileAccountTest.createAccountForm" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FillProfileAccountTest_createAccountForm - 2019.01.14 at 14h 08m 51s.xml">
+    <history-entry file="FillProfileAccountTest_createAccountForm - 2019.01.14 at 16h 30m 18s.xml">
       <configuration name="FillProfileAccountTest.createAccountForm" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FillProfileAccountTest_createAccountForm - 2019.01.14 at 14h 09m 25s.xml">
+    <history-entry file="FillProfileAccountTest_createAccountForm - 2019.01.14 at 16h 30m 54s.xml">
       <configuration name="FillProfileAccountTest.createAccountForm" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FillProfileAccountTest_createAccountForm - 2019.01.14 at 14h 10m 04s.xml">
+    <history-entry file="FillProfileAccountTest_createAccountForm - 2019.01.14 at 16h 31m 20s.xml">
       <configuration name="FillProfileAccountTest.createAccountForm" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FillProfileAccountTest_createAccountForm - 2019.01.14 at 14h 54m 59s.xml">
+    <history-entry file="FillProfileAccountTest_createAccountForm - 2019.01.14 at 16h 32m 03s.xml">
       <configuration name="FillProfileAccountTest.createAccountForm" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FillProfileAccountTest_createAccountForm - 2019.01.14 at 14h 55m 28s.xml">
+    <history-entry file="FillProfileAccountTest_createAccountForm - 2019.01.14 at 16h 32m 31s.xml">
       <configuration name="FillProfileAccountTest.createAccountForm" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -552,11 +559,11 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26590538" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.19249593" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12082067" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2112462" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -1078,20 +1085,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/selenium/FillProfileAccountTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/FillProfileAccountHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="41" />
+        <state relative-caret-position="189">
+          <caret line="79" column="116" selection-start-line="79" selection-start-column="116" selection-end-line="79" selection-end-column="116" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/FillProfileAccountHelper.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/selenium/FillProfileAccountTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="67" column="8" selection-start-line="67" selection-start-column="8" selection-end-line="67" selection-end-column="55" />
+        <state relative-caret-position="224">
+          <caret line="34" column="42" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
