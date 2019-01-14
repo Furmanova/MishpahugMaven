@@ -17,23 +17,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="FillProfileAccountHelper.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="FillProfileAccountHelper.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/FillProfileAccountHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="79" column="116" selection-start-line="79" selection-start-column="116" selection-end-line="79" selection-end-column="116" />
+            <state relative-caret-position="295">
+              <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#5954#5955#0" expanded="true" />
+                <element signature="e#5980#5981#0" expanded="true" />
+                <element signature="e#6035#6036#0" expanded="true" />
+                <element signature="e#6062#6063#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FillProfileAccountTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FillProfileAccountTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/selenium/FillProfileAccountTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="34" column="42" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
+            <state relative-caret-position="201">
+              <caret line="39" column="29" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -89,8 +93,8 @@
         <option value="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/TestBase.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/PageBase.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/CreateAccountHelper.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/FillProfileAccountHelper.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/FillProfileAccountTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/FillProfileAccountHelper.java" />
       </list>
     </option>
   </component>
@@ -106,7 +110,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -160,8 +166,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -511,38 +515,45 @@
       <option name="project" value="LOCAL" />
       <updated>1547470875933</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="fillProfileAccount and FillProfileAccountHelper">
+      <created>1547476591480</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1547476591480</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FillProfileAccountTest_createAccountForm - 2019.01.14 at 16h 24m 19s.xml">
+    <history-entry file="FillProfileAccountTest_createAccountForm - 2019.01.14 at 18h 53m 01s.xml">
       <configuration name="FillProfileAccountTest.createAccountForm" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FillProfileAccountTest_createAccountForm - 2019.01.14 at 16h 25m 52s.xml">
+    <history-entry file="FillProfileAccountTest_createAccountForm - 2019.01.14 at 18h 54m 12s.xml">
       <configuration name="FillProfileAccountTest.createAccountForm" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FillProfileAccountTest_createAccountForm - 2019.01.14 at 16h 27m 44s.xml">
+    <history-entry file="FillProfileAccountTest_createAccountForm - 2019.01.14 at 18h 54m 57s.xml">
       <configuration name="FillProfileAccountTest.createAccountForm" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FillProfileAccountTest_createAccountForm - 2019.01.14 at 16h 29m 18s.xml">
+    <history-entry file="FillProfileAccountTest_createAccountForm - 2019.01.14 at 18h 55m 29s.xml">
       <configuration name="FillProfileAccountTest.createAccountForm" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FillProfileAccountTest_createAccountForm - 2019.01.14 at 16h 29m 46s.xml">
+    <history-entry file="FillProfileAccountTest_createAccountForm - 2019.01.14 at 18h 55m 59s.xml">
       <configuration name="FillProfileAccountTest.createAccountForm" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FillProfileAccountTest_createAccountForm - 2019.01.14 at 16h 30m 18s.xml">
+    <history-entry file="FillProfileAccountTest_createAccountForm - 2019.01.14 at 18h 57m 18s.xml">
       <configuration name="FillProfileAccountTest.createAccountForm" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FillProfileAccountTest_createAccountForm - 2019.01.14 at 16h 30m 54s.xml">
+    <history-entry file="FillProfileAccountTest_createAccountForm - 2019.01.14 at 18h 58m 15s.xml">
       <configuration name="FillProfileAccountTest.createAccountForm" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FillProfileAccountTest_createAccountForm - 2019.01.14 at 16h 31m 20s.xml">
+    <history-entry file="FillProfileAccountTest_createAccountForm - 2019.01.14 at 18h 58m 53s.xml">
       <configuration name="FillProfileAccountTest.createAccountForm" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FillProfileAccountTest_createAccountForm - 2019.01.14 at 16h 32m 03s.xml">
+    <history-entry file="FillProfileAccountTest_createAccountForm - 2019.01.14 at 19h 01m 49s.xml">
       <configuration name="FillProfileAccountTest.createAccountForm" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FillProfileAccountTest_createAccountForm - 2019.01.14 at 16h 32m 31s.xml">
+    <history-entry file="FillProfileAccountTest_createAccountForm - 2019.01.14 at 19h 02m 17s.xml">
       <configuration name="FillProfileAccountTest.createAccountForm" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -563,7 +574,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2112462" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21428572" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -581,14 +592,14 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.31484503" />
       <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25455928" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.31484503" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -598,7 +609,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info id="Capture Tool" order="5" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32952693" />
@@ -638,11 +649,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="19" column="41" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#707#708#0" expanded="true" />
-            <element signature="e#764#765#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -904,11 +910,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="201">
           <caret line="28" column="1" lean-forward="true" selection-end-line="28" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#707#708#0" expanded="true" />
-            <element signature="e#764#765#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1085,22 +1086,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/FillProfileAccountHelper.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/selenium/FillProfileAccountTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="79" column="116" selection-start-line="79" selection-start-column="116" selection-end-line="79" selection-end-column="116" />
+        <state relative-caret-position="201">
+          <caret line="39" column="29" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/selenium/FillProfileAccountTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/FillProfileAccountHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="34" column="42" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
+        <state relative-caret-position="295">
+          <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#5954#5955#0" expanded="true" />
+            <element signature="e#5980#5981#0" expanded="true" />
+            <element signature="e#6035#6036#0" expanded="true" />
+            <element signature="e#6062#6063#0" expanded="true" />
           </folding>
         </state>
       </provider>

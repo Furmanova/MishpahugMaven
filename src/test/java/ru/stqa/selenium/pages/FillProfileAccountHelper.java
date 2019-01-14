@@ -34,8 +34,10 @@ public class FillProfileAccountHelper extends PageBase {
     WebElement writeFewWordsAboutYourself;
     @FindBy(xpath = "//span[contains(text(),'Cancel')]")
     WebElement cancelButton;
-    @FindBy(xpath = "//mat-icon[@class='but mat-icon material-icons']")
-    WebElement iconMenu;
+    @FindBy (xpath = "//img[@id='borderRadius']")
+    WebElement avatarChange;
+    @FindBy(xpath = "//div[@class='classCentr']//button[2]//img[1]")
+    WebElement bannerChange;
 
 
     public FillProfileAccountHelper(WebDriver driver) {
@@ -62,10 +64,8 @@ public class FillProfileAccountHelper extends PageBase {
         waitUntilElementIsLoaded(driver, confession, 40);
         Actions action = new Actions(driver);
         action.moveToElement(confession).build().perform();
-
         confession.click();
         driver.findElement(By.xpath("//span[contains(text(),'" + value + "')]")).click();
-
         return this;
     }
 
@@ -74,11 +74,18 @@ public class FillProfileAccountHelper extends PageBase {
         Actions action = new Actions(driver);
         action.moveToElement(dateOfBirth).click().build().perform();
         //enterClick(dateOfBirth);
-
         driver.findElement(By.xpath("//button[@class='mat-calendar-period-button mat-button']//span[@class='mat-button-wrapper']")).click();
+        WebElement iconButoon = driver.findElement(By.xpath("//button[@class='mat-calendar-previous-button mat-icon-button']"));
+        iconButoon.click();
+        waitUntilElementIsLoaded(driver, iconButoon, 40);
         if (year < 2016) {
-            driver.findElement(By.xpath("//button[@class='mat-calendar-previous-button mat-icon-button']")).click();
-                }
+            iconButoon.click();
+            waitUntilElementIsLoaded(driver, iconButoon, 40);
+            if (year < 1968) {
+                iconButoon.click();
+                waitUntilElementIsLoaded(driver, iconButoon, 40);
+            }
+        }
 
         driver.findElement(By.xpath("//div[contains(text(),'" + year + "')]")).click();
         driver.findElement(By.xpath("//div[contains(text(),'" + month + "')]")).click();
@@ -135,12 +142,11 @@ public class FillProfileAccountHelper extends PageBase {
         return this;
     }
 
-    public void waitUntilPageIsLoaded() {
+    public FillProfileAccountHelper bannerChange() {
+        return this;
     }
 
-    public FillProfileAccountHelper hamburgerIcon() {
-        waitUntilElementIsLoaded(driver, iconMenu, 30);
-        // iconMenu.click();
-        return this;
+    public FillProfileAccountHelper avatarChange() {
+        return null;
     }
 }

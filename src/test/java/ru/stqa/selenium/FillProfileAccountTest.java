@@ -3,7 +3,6 @@ package ru.stqa.selenium;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import ru.stqa.selenium.TestBase;
 import ru.stqa.selenium.pages.FillProfileAccountHelper;
 import ru.stqa.selenium.pages.HomePageHelper;
 import ru.stqa.selenium.pages.LoginPageHelper;
@@ -21,22 +20,24 @@ public class FillProfileAccountTest extends TestBase {
         driver.get(baseUrl);
         homepage.pressLoginButton();
         loginPageHelper.enterEmail("furmanova@mail").enterPassword("Olga123").pressSubmitButton();
-        fillProfileAccount.waitUntilPageIsLoaded();
+        //fillProfileAccount.waitUntilPageIsLoaded();
     }
 
     @Test
     public void createAccountForm() throws InterruptedException {
         fillProfileAccount
                 .confessionSelect("Irreligious")
-               .gender("Female")
+                .gender("Female")
                 .maritalStatus("Married")
                 .foodPreference("Kosher")
                 .languages("Russian")
-                .dateOfBirth(4, "FEB",2019)
                 .phoneNumber("950066841")
                 .lastName("test")
                 .firstName("Olga")
                 .writeFewWordsAboutYourself("test")
-               .cancelButton();
+                .dateOfBirth(4, "FEB", 1983)
+                .bannerChange()
+                .avatarChange()
+                .cancelButton();
     }
 }
