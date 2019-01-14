@@ -2,6 +2,8 @@ package ru.stqa.selenium.pages;
 
 
 import org.openqa.selenium.By;
+
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -34,8 +36,7 @@ public class FillProfileAccountHelper extends PageBase {
     WebElement cancelButton;
     @FindBy(xpath = "//mat-icon[@class='but mat-icon material-icons']")
     WebElement iconMenu;
-    @FindBy(xpath = "//span[contains(text(),'Profile')]")
-    WebElement myProfile;
+
 
     public FillProfileAccountHelper(WebDriver driver) {
         super(driver);
@@ -61,8 +62,10 @@ public class FillProfileAccountHelper extends PageBase {
         waitUntilElementIsLoaded(driver, confession, 40);
         Actions action = new Actions(driver);
         action.moveToElement(confession).build().perform();
+
         confession.click();
         driver.findElement(By.xpath("//span[contains(text(),'" + value + "')]")).click();
+
         return this;
     }
 
@@ -97,6 +100,7 @@ public class FillProfileAccountHelper extends PageBase {
         action.moveToElement(foodPreference).click().build().perform();
         //enterClick(foodPreference);
         driver.findElement(By.xpath("//span[contains(text(),'" + value + "')]")).click();
+        action.sendKeys(Keys.ESCAPE).build().perform();
         return this;
     }
 
@@ -115,7 +119,7 @@ public class FillProfileAccountHelper extends PageBase {
         action.moveToElement(languages).click().build().perform();
        // enterClick(languages);
         driver.findElement(By.xpath("//span[contains(text(),'" + value + "')]")).click();
-
+        action.sendKeys(Keys.ESCAPE).build().perform();
         return this;
     }
 
