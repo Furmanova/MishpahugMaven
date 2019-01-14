@@ -66,14 +66,19 @@ public class FillProfileAccountHelper extends PageBase {
         return this;
     }
 
-    public FillProfileAccountHelper dateOfBirth(int value) {
+    public FillProfileAccountHelper dateOfBirth(int day, String month, String year) {
         waitUntilElementIsLoaded(driver, dateOfBirth, 40);
         Actions action = new Actions(driver);
         action.moveToElement(dateOfBirth).click().build().perform();
-       // enterClick(dateOfBirth);
-       driver.findElement(By.xpath("//div[contains(text(),'" + value + "')]")).click();
+       //enterClick(dateOfBirth);
+        driver.findElement(By.xpath("//button[@class='mat-calendar-period-button mat-button']//span[@class='mat-button-wrapper']")).click();
+        driver.findElement(By.xpath("//div[contains(text(),'"+ year + "')]")).click();
+        driver.findElement(By.xpath("//div[contains(text(),'" + month + "')]")).click();
+        driver.findElement(By.xpath("//div[contains(text(),'" + day + "')]")).click();
+
        return this;
     }
+
 
     public FillProfileAccountHelper maritalStatus(String value) {
         waitUntilElementIsLoaded(driver, maritalStatus, 40);
@@ -88,28 +93,26 @@ public class FillProfileAccountHelper extends PageBase {
         waitUntilElementIsLoaded(driver, foodPreference, 40);
         Actions action = new Actions(driver);
         action.moveToElement(foodPreference).click().build().perform();
-        // enterClick(foodPreference);
+        //enterClick(foodPreference);
         driver.findElement(By.xpath("//span[contains(text(),'" + value + "')]")).click();
         return this;
     }
 
     public FillProfileAccountHelper gender(String value) {
+        waitUntilElementIsLoaded(driver,gender,40);
         Actions action = new Actions(driver);
         action.moveToElement(gender).click().build().perform();
-        // enterClick(gender);
+       // enterClick(gender);
         driver.findElement(By.xpath("//span[contains(text(),'" + value + "')]")).click();
         return this;
     }
 
-
     public FillProfileAccountHelper languages(String value) {
        waitUntilElementIsLoaded(driver,languages,40);
         Actions action = new Actions(driver);
-        action.moveToElement(languages).click().build().perform();
-        //enterClick(languages);
-        //action.doubleClick().build().perform();
+        action.moveToElement(languages).build().perform();
+        enterClick(languages);
         driver.findElement(By.xpath("//span[contains(text(),'" + value + "')]")).click();
-
                 return this;
     }
 
