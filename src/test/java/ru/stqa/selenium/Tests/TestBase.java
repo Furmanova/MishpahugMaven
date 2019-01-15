@@ -1,4 +1,4 @@
-package ru.stqa.selenium;
+package ru.stqa.selenium.Tests;
 
 import java.io.IOException;
 import java.net.URL;
@@ -11,6 +11,7 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
+import ru.stqa.selenium.SuiteConfiguration;
 import ru.stqa.selenium.factory.WebDriverPool;
 
 /**

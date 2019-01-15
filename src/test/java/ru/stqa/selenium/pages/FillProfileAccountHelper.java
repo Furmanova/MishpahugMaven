@@ -9,6 +9,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 
+import java.io.File;
+
 
 public class FillProfileAccountHelper extends PageBase {
     @FindBy(xpath = "//input[@id='inputFirstName']")
@@ -34,7 +36,7 @@ public class FillProfileAccountHelper extends PageBase {
     WebElement writeFewWordsAboutYourself;
     @FindBy(xpath = "//span[contains(text(),'Cancel')]")
     WebElement cancelButton;
-    @FindBy (xpath = "//img[@id='borderRadius']")
+    @FindBy(xpath = "//img[@id='borderRadius']")
     WebElement avatarChange;
     @FindBy(xpath = "//div[@class='classCentr']//button[2]//img[1]")
     WebElement bannerChange;
@@ -143,10 +145,26 @@ public class FillProfileAccountHelper extends PageBase {
     }
 
     public FillProfileAccountHelper bannerChange() {
+        waitUntilElementIsLoaded(driver, avatarChange, 40);
+        enterClick(bannerChange);
+        File file = new File("src\\test\\resources\\Cats.jpg");
+        WebElement buttonOk  = driver.findElement(By.xpath("//input[@type='file']"));
+        buttonOk.sendKeys(file.getAbsolutePath());
+        waitUntilElementIsLoaded(driver,buttonOk,40);
+        driver.findElement(By.xpath("//span[contains(text(),'Ok')]"));
+
+
         return this;
     }
 
-    public FillProfileAccountHelper avatarChange() {
-        return null;
+    public FillProfileAccountHelper avatarChange() { //загрузка фото на аватар
+        waitUntilElementIsLoaded(driver, avatarChange, 40);
+        enterClick(avatarChange);
+        File file = new File("src\\test\\resources\\Cat.jpg");
+        WebElement buttonOk  = driver.findElement(By.xpath("//input[@type='file']"));
+        buttonOk.sendKeys(file.getAbsolutePath());
+        waitUntilElementIsLoaded(driver,buttonOk,40);
+        driver.findElement(By.xpath("//span[contains(text(),'Ok')]"));
+       return this;
     }
 }

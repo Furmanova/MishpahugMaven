@@ -1,4 +1,4 @@
-package ru.stqa.selenium;
+package ru.stqa.selenium.Tests;
 
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeMethod;
@@ -26,7 +26,7 @@ public class FillProfileAccountTest extends TestBase {
     @Test
     public void createAccountForm() throws InterruptedException {
         fillProfileAccount
-                .confessionSelect("Irreligious")
+               .confessionSelect("Irreligious")
                 .gender("Female")
                 .maritalStatus("Married")
                 .foodPreference("Kosher")
@@ -35,6 +35,7 @@ public class FillProfileAccountTest extends TestBase {
                 .lastName("test")
                 .firstName("Olga")
                 .writeFewWordsAboutYourself("test")
+
                 .dateOfBirth(4, "FEB", 1983)
                 .bannerChange()
                 .avatarChange()

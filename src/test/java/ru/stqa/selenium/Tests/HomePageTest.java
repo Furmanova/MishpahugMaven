@@ -1,4 +1,4 @@
-package ru.stqa.selenium;
+package ru.stqa.selenium.Tests;
 
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
