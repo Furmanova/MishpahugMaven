@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1066022a-f10e-4060-b600-710f0142ff67" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/Tests/FillProfileAccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/Tests/FillProfileAccountTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/Tests/LoginPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/Tests/LoginPageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/AuthEventsPageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/AuthEventsPageHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/FillProfileAccountHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/FillProfileAccountHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/PageBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/PageBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ru/stqa/selenium/pages/PageBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ru/stqa/selenium/pages/PageBase.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -23,7 +20,7 @@
       <file leaf-file-name="ChangeAccountFormHelper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/ChangeAccountFormHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
+            <state relative-caret-position="3457">
               <caret line="202" lean-forward="true" selection-start-line="202" selection-end-line="202" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -34,64 +31,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PageBase.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/PageBase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="58" column="24" lean-forward="true" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#547#548#0" expanded="true" />
-                <element signature="e#583#584#0" expanded="true" />
-                <element signature="e#615#616#0" expanded="true" />
-                <element signature="e#655#656#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ChangeProfileTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ChangeProfileTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/selenium/Tests/ChangeProfileTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="38" column="18" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
+            <state relative-caret-position="217">
+              <caret line="21" column="50" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DataProviders.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/selenium/DataProviders.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-297">
-              <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginPageTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/selenium/Tests/LoginPageTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101">
-              <caret line="40" selection-start-line="40" selection-end-line="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AuthEventsPageHelper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/AuthEventsPageHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
-              <folding>
-                <element signature="e#529#530#0" expanded="true" />
-                <element signature="e#558#559#0" expanded="true" />
-                <element signature="e#720#721#0" expanded="true" />
-                <element signature="e#777#778#0" expanded="true" />
-                <element signature="e#821#822#0" expanded="true" />
-                <element signature="e#894#895#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -136,21 +82,21 @@
         <option value="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/LoginPageHelper.java" />
         <option value="$PROJECT_DIR$/src/test/resources/AuthorizationDataSeller.data" />
         <option value="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/DataProviders.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/MenuPageHelper.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/LoginPageTest.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/AuthorizationData.data" />
         <option value="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/FillProfileAccountTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/FillProfileAccount.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/TestBase.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/CreateAccountHelper.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/FillProfileAccountTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/Tests/LoginPageTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/AuthEventsPageHelper.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/PageBase.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/Tests/FillProfileAccountTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/FillProfileAccountHelper.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/ChangeAccountFormHelper.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/Tests/ChangeProfileTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/MenuPageHelper.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/AuthEventsPageHelper.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/Tests/LoginPageTest.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/AuthorizationData.data" />
       </list>
     </option>
   </component>
@@ -218,6 +164,13 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="selenium" type="462c0819:PsiDirectoryNode" />
               <item name="Tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MishpahugMaven" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MishpahugMaven" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -597,31 +550,17 @@
       <option name="project" value="LOCAL" />
       <updated>1547550035453</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Create metod bannerChange and avatarGhange">
+      <created>1547820195540</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1547820195540</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ChangeProfileTest_changeAccountForm - 2019.01.18 at 12h 23m 16s.xml">
-      <configuration name="ChangeProfileTest.changeAccountForm" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ChangeProfileTest_changeAccountForm - 2019.01.18 at 12h 23m 33s.xml">
-      <configuration name="ChangeProfileTest.changeAccountForm" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ChangeProfileTest_changeAccountForm - 2019.01.18 at 12h 24m 02s.xml">
-      <configuration name="ChangeProfileTest.changeAccountForm" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ChangeProfileTest_changeAccountForm - 2019.01.18 at 12h 24m 28s.xml">
-      <configuration name="ChangeProfileTest.changeAccountForm" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ChangeProfileTest_changeAccountForm - 2019.01.18 at 13h 05m 24s.xml">
-      <configuration name="ChangeProfileTest.changeAccountForm" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ChangeProfileTest_changeAccountForm - 2019.01.18 at 13h 07m 38s.xml">
-      <configuration name="ChangeProfileTest.changeAccountForm" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ChangeProfileTest_changeAccountForm - 2019.01.18 at 15h 59m 58s.xml">
-      <configuration name="ChangeProfileTest.changeAccountForm" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="ChangeProfileTest_changeAccountForm - 2019.01.18 at 16h 00m 16s.xml">
       <configuration name="ChangeProfileTest.changeAccountForm" configurationId="TestNG" />
     </history-entry>
@@ -629,6 +568,27 @@
       <configuration name="ChangeProfileTest.changeAccountForm" configurationId="TestNG" />
     </history-entry>
     <history-entry file="LoginPageTest - 2019.01.18 at 16h 02m 35s.xml">
+      <configuration name="LoginPageTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="LoginPageTest - 2019.01.18 at 16h 14m 42s.xml">
+      <configuration name="LoginPageTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="LoginPageTest - 2019.01.18 at 16h 15m 09s.xml">
+      <configuration name="LoginPageTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="LoginPageTest - 2019.01.18 at 16h 16m 03s.xml">
+      <configuration name="LoginPageTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="LoginPageTest - 2019.01.18 at 19h 38m 57s.xml">
+      <configuration name="LoginPageTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="LoginPageTest - 2019.01.18 at 19h 42m 17s.xml">
+      <configuration name="LoginPageTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="LoginPageTest - 2019.01.18 at 19h 44m 42s.xml">
+      <configuration name="LoginPageTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="LoginPageTest - 2019.01.18 at 19h 45m 22s.xml">
       <configuration name="LoginPageTest" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -645,11 +605,11 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4192496" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35562807" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25987843" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20288754" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -926,13 +886,6 @@
     <entry file="file://C:/Olga/CVBank/Cat.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/AuthorizationData.data">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/testng.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -947,13 +900,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-453">
           <caret line="554" column="18" selection-start-line="554" selection-start-column="18" selection-end-line="554" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/MenuPageHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -988,27 +934,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/LoginPageHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="38" column="27" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/PageBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="58" column="24" lean-forward="true" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#547#548#0" expanded="true" />
-            <element signature="e#583#584#0" expanded="true" />
-            <element signature="e#615#616#0" expanded="true" />
-            <element signature="e#655#656#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/FillProfileAccountHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -1031,9 +956,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/MenuPageHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+          <folding>
+            <element signature="e#325#326#0" expanded="true" />
+            <element signature="e#354#355#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/PageBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="58" column="24" lean-forward="true" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#547#548#0" expanded="true" />
+            <element signature="e#583#584#0" expanded="true" />
+            <element signature="e#615#616#0" expanded="true" />
+            <element signature="e#655#656#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/ChangeAccountFormHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
+        <state relative-caret-position="3457">
           <caret line="202" lean-forward="true" selection-start-line="202" selection-end-line="202" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1043,12 +993,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/selenium/Tests/ChangeProfileTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/AuthorizationData.data">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="38" column="18" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
+        <state relative-caret-position="54">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/selenium/Tests/LoginPageTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="43" column="39" lean-forward="true" selection-start-line="43" selection-start-column="39" selection-end-line="43" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/LoginPageHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#703#704#0" expanded="true" />
+            <element signature="e#732#733#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1062,7 +1027,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/AuthEventsPageHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
+        <state relative-caret-position="327">
           <caret line="23" selection-start-line="23" selection-end-line="23" />
           <folding>
             <element signature="e#529#530#0" expanded="true" />
@@ -1075,10 +1040,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/selenium/Tests/LoginPageTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/selenium/Tests/ChangeProfileTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        <state relative-caret-position="217">
+          <caret line="21" column="50" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

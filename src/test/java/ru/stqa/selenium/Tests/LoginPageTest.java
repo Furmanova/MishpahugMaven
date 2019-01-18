@@ -19,18 +19,18 @@ public class LoginPageTest extends TestBase {
 
     @BeforeMethod
     public void initPageObjects() {
-
         homepage = PageFactory.initElements(driver,
                 HomePageHelper.class);
         loginPageHelper = PageFactory.initElements(driver,
                 LoginPageHelper.class);
         authEventsPage = PageFactory.initElements(driver,
                 AuthEventsPageHelper.class);
+        menuPageHelper = PageFactory.initElements(driver, MenuPageHelper.class);
         driver.get(baseUrl);
         homepage.waitUntilPageIsLoaded()
                 .pressLoginButton();
         loginPageHelper.waitUntilPageIsLoaded();
-        menuPageHelper = PageFactory.initElements(driver, MenuPageHelper.class);
+
     }
 
     @Test(groups = {"smoke", "regression"}, dataProviderClass = DataProviders.class, dataProvider = "positiveAuthorization")
@@ -38,7 +38,7 @@ public class LoginPageTest extends TestBase {
         loginPageHelper.enterEmail(email)
                 .enterPassword(password)
                 .pressSubmitButton();
-        authEventsPage.waitUntilPageIsLoaded();
+       authEventsPage.waitUntilPageIsLoaded();
         Assert.assertTrue(authEventsPage.isHeaderCorrect("Find event"));
         Assert.assertTrue(authEventsPage.isDisplayedIconMenu());
         authEventsPage.hamburgerIcon();

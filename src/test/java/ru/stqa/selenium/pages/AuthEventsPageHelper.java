@@ -21,7 +21,7 @@ public class AuthEventsPageHelper extends PageBase {
     }
 
     public void waitUntilPageIsLoaded() {
-        waitUntilElementIsLoaded(driver, filterButton, 40);
+       waitUntilElementIsLoaded(driver, filterButton, 40);
 
     }
 
