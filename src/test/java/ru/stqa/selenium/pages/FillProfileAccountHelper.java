@@ -21,7 +21,6 @@ public class FillProfileAccountHelper extends PageBase {
     WebElement phone;
     @FindBy(xpath = "//mat-select[@placeholder='Confession']//div[@class='mat-select-trigger']")
     WebElement confession;
-
     @FindBy(xpath = "//mat-datepicker-toggle[@class='mat-datepicker-toggle']//button[@type='button']")
     WebElement dateOfBirth;
     @FindBy(xpath = "//mat-select[@placeholder='Marital Status']//div[@class='mat-select-trigger']")
@@ -40,10 +39,34 @@ public class FillProfileAccountHelper extends PageBase {
     WebElement avatarChange;
     @FindBy(xpath = "//div[@class='classCentr']//button[2]//img[1]")
     WebElement bannerChange;
-
+    @FindBy(xpath = "//button[@type='submit']")
+    WebElement saveButton;
+    @FindBy(xpath = "//h1[@class='gorisontal-center']")
+    WebElement eventsPage;
+    @FindBy(xpath = "//span[contains(text(),'Change')]")
+    WebElement clickChangeButton;
+    @FindBy(xpath = "//span[contains(text(),'Profile')]")
+    WebElement myProfile;
+    @FindBy(xpath = "//span[contains(text(),'Change')]")
+    WebElement clickChngeButton;
 
     public FillProfileAccountHelper(WebDriver driver) {
         super(driver);
+    }
+
+    public FillProfileAccountHelper clickChngeButton() {
+        waitUntilElementIsLoaded(driver, clickChangeButton, 40);
+        Actions action = new Actions(driver);
+        action.moveToElement(clickChangeButton).click().build().perform();
+        return this;
+    }
+
+    public FillProfileAccountHelper myProfile() {
+        waitUntilElementIsLoaded(driver, myProfile, 40);
+        Actions action = new Actions(driver);
+        action.moveToElement(myProfile).click().build().perform();
+        //enterClick(myProfile);
+        return this;
     }
 
     public FillProfileAccountHelper firstName(String value) {
@@ -65,8 +88,8 @@ public class FillProfileAccountHelper extends PageBase {
     public FillProfileAccountHelper confessionSelect(String value) throws InterruptedException {
         waitUntilElementIsLoaded(driver, confession, 40);
         Actions action = new Actions(driver);
-        action.moveToElement(confession).build().perform();
-        confession.click();
+        action.moveToElement(confession).click().build().perform();
+        // enterClick(confession);
         driver.findElement(By.xpath("//span[contains(text(),'" + value + "')]")).click();
         return this;
     }
@@ -88,11 +111,9 @@ public class FillProfileAccountHelper extends PageBase {
                 waitUntilElementIsLoaded(driver, iconButoon, 40);
             }
         }
-
         driver.findElement(By.xpath("//div[contains(text(),'" + year + "')]")).click();
         driver.findElement(By.xpath("//div[contains(text(),'" + month + "')]")).click();
         driver.findElement(By.xpath("//div[contains(text(),'" + day + "')]")).click();
-
         return this;
     }
 
@@ -110,7 +131,7 @@ public class FillProfileAccountHelper extends PageBase {
         waitUntilElementIsLoaded(driver, foodPreference, 40);
         Actions action = new Actions(driver);
         action.moveToElement(foodPreference).click().build().perform();
-        //enterClick(foodPreference);
+        // enterClick(foodPreference);
         driver.findElement(By.xpath("//span[contains(text(),'" + value + "')]")).click();
         action.sendKeys(Keys.ESCAPE).build().perform();
         return this;
@@ -120,7 +141,7 @@ public class FillProfileAccountHelper extends PageBase {
         waitUntilElementIsLoaded(driver, gender, 40);
         Actions action = new Actions(driver);
         action.moveToElement(gender).click().build().perform();
-        // enterClick(gender);
+        //enterClick(gender);
         driver.findElement(By.xpath("//span[contains(text(),'" + value + "')]")).click();
         return this;
     }
@@ -129,6 +150,7 @@ public class FillProfileAccountHelper extends PageBase {
         waitUntilElementIsLoaded(driver, languages, 40);
         Actions action = new Actions(driver);
         action.moveToElement(languages).click().build().perform();
+        // enterClick(languages);
         driver.findElement(By.xpath("//span[contains(text(),'" + value + "')]")).click();
         action.sendKeys(Keys.ESCAPE).build().perform();
         return this;
@@ -140,31 +162,44 @@ public class FillProfileAccountHelper extends PageBase {
     }
 
     public FillProfileAccountHelper cancelButton() {
-        waitUntilElementIsLoaded(driver, cancelButton, 30);
+        waitUntilElementIsLoaded(driver, eventsPage, 40);
+        Actions action = new Actions(driver);
+        action.moveToElement(cancelButton).click().build().perform();
         return this;
     }
 
     public FillProfileAccountHelper bannerChange() {
         waitUntilElementIsLoaded(driver, avatarChange, 40);
-        enterClick(bannerChange);
+        Actions action = new Actions(driver);
+        action.moveToElement(bannerChange).click().build().perform();
+        //enterClick(bannerChange);
         File file = new File("src\\test\\resources\\Cats.jpg");
-        WebElement buttonOk  = driver.findElement(By.xpath("//input[@type='file']"));
-        buttonOk.sendKeys(file.getAbsolutePath());
-        waitUntilElementIsLoaded(driver,buttonOk,40);
-        driver.findElement(By.xpath("//span[contains(text(),'Ok')]"));
-
-
+        WebElement fotoBanner = driver.findElement(By.xpath("//input[@type='file']"));
+        fotoBanner.sendKeys(file.getAbsolutePath());
+        waitUntilElementIsLoaded(driver, fotoBanner, 40);
+        driver.findElement(By.xpath("//span[contains(text(),'Ok')]")).click();
         return this;
     }
 
     public FillProfileAccountHelper avatarChange() { //загрузка фото на аватар
         waitUntilElementIsLoaded(driver, avatarChange, 40);
-        enterClick(avatarChange);
+        Actions action = new Actions(driver);
+        action.moveToElement(avatarChange).click().build().perform();
+        // enterClick(avatarChange);
         File file = new File("src\\test\\resources\\Cat.jpg");
-        WebElement buttonOk  = driver.findElement(By.xpath("//input[@type='file']"));
-        buttonOk.sendKeys(file.getAbsolutePath());
-        waitUntilElementIsLoaded(driver,buttonOk,40);
-        driver.findElement(By.xpath("//span[contains(text(),'Ok')]"));
-       return this;
+        WebElement fotoAvatar = driver.findElement(By.xpath("//input[@type='file']"));
+        fotoAvatar.sendKeys(file.getAbsolutePath());
+        waitUntilElementIsLoaded(driver, fotoAvatar, 40);
+        driver.findElement(By.xpath("//span[contains(text(),'Ok')]")).click();
+        return this;
     }
+
+    public FillProfileAccountHelper saveButton() {
+        waitUntilElementIsLoaded(driver, eventsPage, 40);
+        Actions action = new Actions(driver);
+        action.moveToElement(saveButton).click().build().perform();
+        return this;
+
+    }
+
 }

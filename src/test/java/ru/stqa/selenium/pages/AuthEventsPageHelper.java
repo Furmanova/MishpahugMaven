@@ -34,7 +34,7 @@ public class AuthEventsPageHelper extends PageBase {
     }
 
     public void hamburgerIcon() {
-        waitUntilElementIsLoaded(driver, iconMenu, 30);
+        waitUntilElementIsLoaded(driver, iconMenu, 40);
         iconMenu.click();
     }
 }

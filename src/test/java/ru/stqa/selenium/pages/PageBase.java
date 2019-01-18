@@ -56,7 +56,7 @@ public abstract class PageBase {
 
     public void enterClick(WebElement element) {
         element.click();
-        //element.clear();
+        element.clear();
 
     }
 
