@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1066022a-f10e-4060-b600-710f0142ff67" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/Tests/LoginPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/Tests/LoginPageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/AuthEventsPageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/AuthEventsPageHelper.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -20,24 +18,61 @@
       <file leaf-file-name="ChangeAccountFormHelper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/ChangeAccountFormHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3457">
-              <caret line="202" lean-forward="true" selection-start-line="202" selection-end-line="202" />
+            <state relative-caret-position="319">
+              <caret line="100" column="31" lean-forward="true" selection-start-line="100" selection-start-column="12" selection-end-line="100" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2300#2301#0" expanded="true" />
-                <element signature="e#2337#2338#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ChangeProfileTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ChangeProfileTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/selenium/Tests/ChangeProfileTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="21" column="50" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="50" />
+            <state relative-caret-position="372">
+              <caret line="41" column="30" lean-forward="true" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EventsHelper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/EventsHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="105" column="38" selection-start-line="105" selection-start-column="38" selection-end-line="105" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#159#160#0" expanded="true" />
+                <element signature="e#188#189#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EventsTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/selenium/Tests/EventsTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="34" column="35" lean-forward="true" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AuthEventsPageHelper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/AuthEventsPageHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="246">
+              <caret line="35" column="16" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+              <folding>
+                <element signature="e#529#530#0" expanded="true" />
+                <element signature="e#558#559#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -92,11 +127,13 @@
         <option value="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/Tests/FillProfileAccountTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/FillProfileAccountHelper.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/ChangeAccountFormHelper.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/Tests/ChangeProfileTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/MenuPageHelper.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/AuthEventsPageHelper.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/Tests/LoginPageTest.java" />
         <option value="$PROJECT_DIR$/src/test/resources/AuthorizationData.data" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/Tests/ChangeProfileTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/EventsHelper.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/Tests/EventsTest.java" />
       </list>
     </option>
   </component>
@@ -112,8 +149,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -165,18 +203,10 @@
               <item name="selenium" type="462c0819:PsiDirectoryNode" />
               <item name="Tests" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="MishpahugMaven" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MishpahugMaven" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -209,7 +239,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.LoginPageTest">
+  <component name="RunManager" selected="TestNG.EventsTest.eventTest">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -287,6 +317,35 @@
       <properties />
       <listeners />
     </configuration>
+    <configuration name="EventsTest.eventTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MishpahugMaven" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.selenium.Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="ru.stqa.selenium.Tests" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.selenium.Tests.EventsTest" />
+      <option name="METHOD_NAME" value="eventTest" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
     <configuration name="FillProfileAccountTest.createAccountForm" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MishpahugMaven" />
       <extension name="coverage">
@@ -345,35 +404,6 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="LoginPageTest.loginPositive" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MishpahugMaven" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.selenium.Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="ru.stqa.selenium.pages" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.selenium.Tests.LoginPageTest" />
-      <option name="METHOD_NAME" value="loginPositive" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <properties />
-      <listeners />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -397,19 +427,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="TestNG.LoginPageTest.loginPositive" />
       <item itemvalue="TestNG.FillProfileAccountTest.createAccountForm" />
       <item itemvalue="TestNG.ChangeProfileTest.createAccountForm" />
       <item itemvalue="TestNG.ChangeProfileTest.changeAccountForm" />
       <item itemvalue="TestNG.LoginPageTest" />
+      <item itemvalue="TestNG.EventsTest.eventTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.EventsTest.eventTest" />
         <item itemvalue="TestNG.LoginPageTest" />
         <item itemvalue="TestNG.ChangeProfileTest.changeAccountForm" />
         <item itemvalue="TestNG.ChangeProfileTest.createAccountForm" />
         <item itemvalue="TestNG.FillProfileAccountTest.createAccountForm" />
-        <item itemvalue="TestNG.LoginPageTest.loginPositive" />
       </list>
     </recent_temporary>
   </component>
@@ -557,43 +587,50 @@
       <option name="project" value="LOCAL" />
       <updated>1547820195540</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Create metod bannerChange and avatarGhange">
+      <created>1547833851168</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1547833851168</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ChangeProfileTest_changeAccountForm - 2019.01.18 at 16h 00m 16s.xml">
-      <configuration name="ChangeProfileTest.changeAccountForm" configurationId="TestNG" />
+    <history-entry file="EventsTest_eventTest - 2019.01.23 at 11h 10m 20s.xml">
+      <configuration name="EventsTest.eventTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ChangeProfileTest_changeAccountForm - 2019.01.18 at 16h 00m 41s.xml">
-      <configuration name="ChangeProfileTest.changeAccountForm" configurationId="TestNG" />
+    <history-entry file="EventsTest_eventTest - 2019.01.23 at 11h 16m 06s.xml">
+      <configuration name="EventsTest.eventTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="LoginPageTest - 2019.01.18 at 16h 02m 35s.xml">
-      <configuration name="LoginPageTest" configurationId="TestNG" />
+    <history-entry file="EventsTest_eventTest - 2019.01.23 at 11h 17m 03s.xml">
+      <configuration name="EventsTest.eventTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="LoginPageTest - 2019.01.18 at 16h 14m 42s.xml">
-      <configuration name="LoginPageTest" configurationId="TestNG" />
+    <history-entry file="EventsTest_eventTest - 2019.01.23 at 11h 20m 36s.xml">
+      <configuration name="EventsTest.eventTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="LoginPageTest - 2019.01.18 at 16h 15m 09s.xml">
-      <configuration name="LoginPageTest" configurationId="TestNG" />
+    <history-entry file="EventsTest_eventTest - 2019.01.23 at 11h 21m 53s.xml">
+      <configuration name="EventsTest.eventTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="LoginPageTest - 2019.01.18 at 16h 16m 03s.xml">
-      <configuration name="LoginPageTest" configurationId="TestNG" />
+    <history-entry file="EventsTest_eventTest - 2019.01.23 at 11h 23m 34s.xml">
+      <configuration name="EventsTest.eventTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="LoginPageTest - 2019.01.18 at 19h 38m 57s.xml">
-      <configuration name="LoginPageTest" configurationId="TestNG" />
+    <history-entry file="EventsTest_eventTest - 2019.01.23 at 11h 27m 00s.xml">
+      <configuration name="EventsTest.eventTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="LoginPageTest - 2019.01.18 at 19h 42m 17s.xml">
-      <configuration name="LoginPageTest" configurationId="TestNG" />
+    <history-entry file="EventsTest_eventTest - 2019.01.23 at 11h 27m 30s.xml">
+      <configuration name="EventsTest.eventTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="LoginPageTest - 2019.01.18 at 19h 44m 42s.xml">
-      <configuration name="LoginPageTest" configurationId="TestNG" />
+    <history-entry file="EventsTest_eventTest - 2019.01.23 at 11h 28m 21s.xml">
+      <configuration name="EventsTest.eventTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="LoginPageTest - 2019.01.18 at 19h 45m 22s.xml">
-      <configuration name="LoginPageTest" configurationId="TestNG" />
+    <history-entry file="EventsTest_eventTest - 2019.01.23 at 11h 29m 57s.xml">
+      <configuration name="EventsTest.eventTest" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1296" height="696" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -605,11 +642,11 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35562807" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26725665" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20288754" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20469256" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -625,28 +662,28 @@
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32952693" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4502447" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2325228" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32952693" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39967373" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info id="Capture Tool" order="5" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32952693" />
       <window_info anchor="right" id="Maven Projects" order="7" />
       <window_info id="Favorites" order="6" side_tool="true" />
@@ -669,20 +706,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/selenium/Tests/LoginPageTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/HomePageHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/PageBase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
@@ -967,32 +990,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/PageBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="58" column="24" lean-forward="true" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#547#548#0" expanded="true" />
-            <element signature="e#583#584#0" expanded="true" />
-            <element signature="e#615#616#0" expanded="true" />
-            <element signature="e#655#656#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/ChangeAccountFormHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3457">
-          <caret line="202" lean-forward="true" selection-start-line="202" selection-end-line="202" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2300#2301#0" expanded="true" />
-            <element signature="e#2337#2338#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/AuthorizationData.data">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -1027,23 +1024,65 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/AuthEventsPageHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="246">
+          <caret line="35" column="16" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
           <folding>
             <element signature="e#529#530#0" expanded="true" />
             <element signature="e#558#559#0" expanded="true" />
-            <element signature="e#720#721#0" expanded="true" />
-            <element signature="e#777#778#0" expanded="true" />
-            <element signature="e#821#822#0" expanded="true" />
-            <element signature="e#894#895#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/PageBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="59">
+          <caret line="50" column="16" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#547#548#0" expanded="true" />
+            <element signature="e#583#584#0" expanded="true" />
+            <element signature="e#615#616#0" expanded="true" />
+            <element signature="e#655#656#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/selenium/Tests/ChangeProfileTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="21" column="50" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="50" />
+        <state relative-caret-position="372">
+          <caret line="41" column="30" lean-forward="true" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/ChangeAccountFormHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="100" column="31" lean-forward="true" selection-start-line="100" selection-start-column="12" selection-end-line="100" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/EventsHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="105" column="38" selection-start-line="105" selection-start-column="38" selection-end-line="105" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#159#160#0" expanded="true" />
+            <element signature="e#188#189#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/selenium/Tests/EventsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="34" column="35" lean-forward="true" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
