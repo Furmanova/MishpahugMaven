@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1066022a-f10e-4060-b600-710f0142ff67" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/Tests/FiltersEventTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/FiltersEventHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/Tests/FiltersEventTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/Tests/FiltersEventTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/FiltersEventHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/FiltersEventHelper.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -20,8 +20,8 @@
       <file leaf-file-name="EventsHelper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/EventsHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="86">
-              <caret line="13" column="91" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="91" />
+            <state relative-caret-position="-616">
+              <caret line="23" column="52" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#159#160#0" expanded="true" />
@@ -46,14 +46,12 @@
       <file leaf-file-name="FiltersEventHelper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/FiltersEventHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="54" column="59" selection-start-line="54" selection-start-column="59" selection-end-line="54" selection-end-column="59" />
+            <state relative-caret-position="48">
+              <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#211#212#0" expanded="true" />
                 <element signature="e#240#241#0" expanded="true" />
-                <element signature="e#625#626#0" expanded="true" />
-                <element signature="e#647#648#0" expanded="true" />
                 <element signature="e#683#684#0" expanded="true" />
                 <element signature="e#705#706#0" expanded="true" />
                 <element signature="e#738#739#0" expanded="true" />
@@ -68,8 +66,8 @@
       <file leaf-file-name="FiltersEventTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/selenium/Tests/FiltersEventTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="25" column="16" lean-forward="true" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+            <state relative-caret-position="180">
+              <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -124,7 +122,6 @@
         <option value="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/FillProfileAccountTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/PageBase.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/Tests/FillProfileAccountTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/FillProfileAccountHelper.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/ChangeAccountFormHelper.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/MenuPageHelper.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/AuthEventsPageHelper.java" />
@@ -133,6 +130,7 @@
         <option value="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/Tests/ChangeProfileTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/EventsHelper.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/Tests/EventsTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/FillProfileAccountHelper.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/FiltersEventHelper.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/stqa/selenium/Tests/FiltersEventTest.java" />
       </list>
@@ -602,38 +600,45 @@
       <option name="project" value="LOCAL" />
       <updated>1548236021013</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Create Filtres Event Page">
+      <created>1548321413319</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1548321413319</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FiltersEventTest_filtresEventTest - 2019.01.24 at 10h 59m 33s.xml">
+    <history-entry file="FiltersEventTest_filtresEventTest - 2019.01.24 at 12h 15m 40s.xml">
       <configuration name="FiltersEventTest.filtresEventTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FiltersEventTest_filtresEventTest - 2019.01.24 at 11h 00m 41s.xml">
+    <history-entry file="FiltersEventTest_filtresEventTest - 2019.01.24 at 12h 16m 11s.xml">
       <configuration name="FiltersEventTest.filtresEventTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FiltersEventTest_filtresEventTest - 2019.01.24 at 11h 04m 37s.xml">
+    <history-entry file="FiltersEventTest_filtresEventTest - 2019.01.24 at 12h 17m 16s.xml">
       <configuration name="FiltersEventTest.filtresEventTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FiltersEventTest_filtresEventTest - 2019.01.24 at 11h 05m 08s.xml">
+    <history-entry file="FiltersEventTest_filtresEventTest - 2019.01.24 at 12h 19m 16s.xml">
       <configuration name="FiltersEventTest.filtresEventTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FiltersEventTest_filtresEventTest - 2019.01.24 at 11h 05m 31s.xml">
+    <history-entry file="FiltersEventTest_filtresEventTest - 2019.01.24 at 12h 25m 14s.xml">
       <configuration name="FiltersEventTest.filtresEventTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FiltersEventTest_filtresEventTest - 2019.01.24 at 11h 06m 22s.xml">
+    <history-entry file="FiltersEventTest_filtresEventTest - 2019.01.24 at 12h 30m 56s.xml">
       <configuration name="FiltersEventTest.filtresEventTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FiltersEventTest_filtresEventTest - 2019.01.24 at 11h 08m 02s.xml">
+    <history-entry file="FiltersEventTest_filtresEventTest - 2019.01.24 at 12h 38m 55s.xml">
       <configuration name="FiltersEventTest.filtresEventTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FiltersEventTest_filtresEventTest - 2019.01.24 at 11h 08m 48s.xml">
+    <history-entry file="FiltersEventTest_filtresEventTest - 2019.01.24 at 12h 49m 21s.xml">
       <configuration name="FiltersEventTest.filtresEventTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FiltersEventTest_filtresEventTest - 2019.01.24 at 11h 11m 22s.xml">
+    <history-entry file="FiltersEventTest_filtresEventTest - 2019.01.24 at 12h 49m 46s.xml">
       <configuration name="FiltersEventTest.filtresEventTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="FiltersEventTest_filtresEventTest - 2019.01.24 at 11h 12m 41s.xml">
+    <history-entry file="FiltersEventTest_filtresEventTest - 2019.01.24 at 12h 50m 20s.xml">
       <configuration name="FiltersEventTest.filtresEventTest" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -650,7 +655,7 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3079646" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22123894" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -707,7 +712,8 @@
     <MESSAGE value="fillProfileAccount and FillProfileAccountHelper" />
     <MESSAGE value="Create metod bannerChange and avatarGhange" />
     <MESSAGE value="Create Event Page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create Event Page" />
+    <MESSAGE value="Create Filtres Event Page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create Filtres Event Page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -715,13 +721,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/selenium/Tests/LoginPageTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/HomePageHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="675">
@@ -1015,28 +1014,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/selenium/Tests/EventsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-162">
-          <caret line="18" column="33" lean-forward="true" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/EventsHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="13" column="91" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="91" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#159#160#0" expanded="true" />
-            <element signature="e#188#189#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/PageBase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="59">
@@ -1065,26 +1042,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/FillProfileAccountHelper.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.10.0/selenium-api-3.10.0.jar!/org/openqa/selenium/Keys.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/selenium/Tests/EventsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1797">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        <state relative-caret-position="-162">
+          <caret line="18" column="33" lean-forward="true" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/FillProfileAccountHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/EventsHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-616">
+          <caret line="23" column="52" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#159#160#0" expanded="true" />
+            <element signature="e#188#189#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/selenium/pages/FiltersEventHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="54" column="59" selection-start-line="54" selection-start-column="59" selection-end-line="54" selection-end-column="59" />
+        <state relative-caret-position="48">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#211#212#0" expanded="true" />
             <element signature="e#240#241#0" expanded="true" />
-            <element signature="e#625#626#0" expanded="true" />
-            <element signature="e#647#648#0" expanded="true" />
             <element signature="e#683#684#0" expanded="true" />
             <element signature="e#705#706#0" expanded="true" />
             <element signature="e#738#739#0" expanded="true" />
@@ -1097,8 +1097,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/selenium/Tests/FiltersEventTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="25" column="16" lean-forward="true" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+        <state relative-caret-position="180">
+          <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

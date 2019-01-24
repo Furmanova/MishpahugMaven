@@ -23,9 +23,9 @@ public class FiltersEventTest extends TestBase {
     @Test
     public void filtresEventTest(){
         filtersEventHelper.clickFiltersButoon()
-                .fromDateCalendar()
-               // .toDateCalendar()
-              //  .holidayFilters("Sukkot")
+              .fromDateCalendar(20,"FEB",2020)
+              //.toDateCalendar(25, "FEB",2023)
+            // .holidayFilters("Sukkot")
                // .confessionFilters("Irreligious")
                 .foodPreferences()
                 .resetClickButton()
