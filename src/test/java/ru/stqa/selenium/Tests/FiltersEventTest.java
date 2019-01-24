@@ -21,16 +21,16 @@ public class FiltersEventTest extends TestBase {
     }
 
     @Test
-    public void filtresEventTest(){
+    public void filtresEventTest() {
         filtersEventHelper.clickFiltersButoon()
-              .fromDateCalendar(20,"FEB",2020)
-              //.toDateCalendar(25, "FEB",2023)
-            // .holidayFilters("Sukkot")
-               // .confessionFilters("Irreligious")
+                .fromDateCalendar(20, "FEB", 2020)
+                //.toDateCalendar(25, "FEB",2023)
+                .holidayFilters()
+                .confessionFilters()
                 .foodPreferences()
-                .resetClickButton()
-                .okClickButton()
-                .cancelClickButton();
+               // .resetClickButton()
+               .okClickButton();
+                //.cancelClickButton();
 
     }
 }

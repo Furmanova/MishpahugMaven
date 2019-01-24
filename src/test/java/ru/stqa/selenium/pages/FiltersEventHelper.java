@@ -19,11 +19,11 @@ public class FiltersEventHelper extends PageBase {
     WebElement holiday;
     @FindBy(xpath = "//mat-select[@placeholder='Confession']//div[@class='mat-select-trigger']")
     WebElement confession;
-    @FindBy(xpath = "")
+    @FindBy(xpath = "//span[contains(text(),'RESET')]")
     WebElement resetClickButton;
-    @FindBy(xpath = "")
+    @FindBy(xpath = "//span[contains(text(),'OK')]")
     WebElement okClickButton;
-    @FindBy(xpath = "")
+    @FindBy(xpath = "//span[contains(text(),'CANCEL')]")
     WebElement cancelClickButton;
 
     public FiltersEventHelper(WebDriver driver) {
@@ -31,14 +31,14 @@ public class FiltersEventHelper extends PageBase {
     }
 
     public FiltersEventHelper clickFiltersButoon() {
-        waitUntilElementIsLoaded(driver,clickFiltersButoon,40);
+        waitUntilElementIsLoaded(driver, clickFiltersButoon, 40);
         Actions action = new Actions(driver);
         action.moveToElement(clickFiltersButoon).click().build().perform();
         return this;
     }
 
     public FiltersEventHelper fromDateCalendar(int day, String month, int year) {
-        waitUntilElementIsLoaded(driver,fromDateCalendar,40);
+        waitUntilElementIsLoaded(driver, fromDateCalendar, 40);
         Actions action = new Actions(driver);
         action.moveToElement(fromDateCalendar).click().build().perform();
         driver.findElement(By.xpath("//button[@class='mat-calendar-period-button mat-button']//span[@class='mat-button-wrapper']")).click();
@@ -50,7 +50,7 @@ public class FiltersEventHelper extends PageBase {
     }
 
     public FiltersEventHelper toDateCalendar(int day, String month, int year) {
-        waitUntilElementIsLoaded(driver,toDateCalendar,40);
+        waitUntilElementIsLoaded(driver, toDateCalendar, 40);
         Actions action = new Actions(driver);
         action.moveToElement(toDateCalendar).click().build().perform();
         driver.findElement(By.xpath("//button[@class='mat-calendar-period-button mat-button']//span[@class='mat-button-wrapper']")).click();
@@ -61,39 +61,51 @@ public class FiltersEventHelper extends PageBase {
         return this;
     }
 
-    public FiltersEventHelper holidayFilters(String value)  {
+    public FiltersEventHelper holidayFilters() {
         waitUntilElementIsLoaded(driver, holiday, 40);
         Actions action = new Actions(driver);
         action.moveToElement(holiday).click().build().perform();
-        driver.findElement(By.xpath("//span[contains(text(),'" + value + "')]")).click();
+        driver.findElement(By.xpath("//span[contains(text(),'Purim')]")).click();
+        // driver.findElement(By.xpath("//span[contains(text(),'" + value + "')]")).click();
 
         return this;
     }
 
-    public FiltersEventHelper confessionFilters(String value) {
+    public FiltersEventHelper confessionFilters() {
         waitUntilElementIsLoaded(driver, confession, 40);
         Actions action = new Actions(driver);
         action.moveToElement(confession).click().build().perform();
-
-        driver.findElement(By.xpath("//span[contains(text(),'" + value + "')]")).click();
+        driver.findElement(By.xpath("//span[contains(text(),'Irreligious')]")).click();
+        // driver.findElement(By.xpath("//span[contains(text(),'" + value + "')]")).click();
 
         return this;
     }
 
     public FiltersEventHelper foodPreferences() {
         driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Food preferences'])[1]/following::div[2]")).click();
+        // driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Food preferences'])[1]/following::div[7]")).click();
+        //driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='CANCEL'])[1]/preceding::div[5]")).click();
         return this;
     }
 
     public FiltersEventHelper resetClickButton() {
+        waitUntilElementIsLoaded(driver,resetClickButton,40);
+        Actions action = new Actions(driver);
+        action.moveToElement(resetClickButton).click().build().perform();
         return this;
     }
 
     public FiltersEventHelper okClickButton() {
+        waitUntilElementIsLoaded(driver,okClickButton,40);
+        Actions action = new Actions(driver);
+        action.moveToElement(okClickButton).click().build().perform();
         return this;
     }
 
     public FiltersEventHelper cancelClickButton() {
+        waitUntilElementIsLoaded(driver,cancelClickButton,40);
+        Actions action = new Actions(driver);
+        action.moveToElement(cancelClickButton).click().build().perform();
         return this;
     }
 }
