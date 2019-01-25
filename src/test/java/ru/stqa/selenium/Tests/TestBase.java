@@ -3,15 +3,16 @@ package ru.stqa.selenium.Tests;
 import java.io.IOException;
 import java.net.URL;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.Capabilities;
 
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
-import ru.stqa.selenium.SuiteConfiguration;
+import util.LogLog4j;
+import util.SuiteConfiguration;
 import ru.stqa.selenium.factory.WebDriverPool;
 
 /**
@@ -22,6 +23,7 @@ public class TestBase {
   protected static URL gridHubUrl = null;
   protected static String baseUrl;
   protected static Capabilities capabilities;
+  protected static Logger Log = Logger.getLogger(LogLog4j.class.getName());
 
   protected WebDriver driver;
 

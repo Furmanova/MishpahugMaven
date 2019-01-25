@@ -1,10 +1,12 @@
 package ru.stqa.selenium.pages;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import util.LogLog4j;
 
 /**
  * Abstract class representation of a PageBase in the UI. PageBase object pattern
@@ -12,7 +14,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public abstract class PageBase {
 
     protected WebDriver driver;
-
+    protected static Logger Log = Logger.getLogger(LogLog4j.class.getName());
     /*
      * Constructor injecting the WebDriver interface
      *
