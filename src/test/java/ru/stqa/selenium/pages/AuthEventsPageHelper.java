@@ -4,6 +4,8 @@ package ru.stqa.selenium.pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class AuthEventsPageHelper extends PageBase {
     @FindBy(xpath = "//mat-icon[@class='but mat-icon material-icons']")
@@ -37,4 +39,5 @@ public class AuthEventsPageHelper extends PageBase {
         waitUntilElementIsLoaded(driver, iconMenu, 40);
         iconMenu.click();
     }
+
 }
